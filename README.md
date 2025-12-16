@@ -10,8 +10,7 @@ SSH brute force
 4. Analisa log (eve.json)
 
 🔹 STEP 1 – Install Suricata (Ubuntu Server)
-> sudo apt update
-> sudo apt install suricata -y  
+> sudo apt update && sudo apt install suricata -y  
 > suricata --version  
   
 🔹 STEP 2 – Tentukan Interface Network  
