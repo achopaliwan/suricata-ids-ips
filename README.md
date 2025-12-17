@@ -60,7 +60,8 @@ SSH Bruteforce:
 
 6️⃣ Re-check alert setelah scan 
 > jq 'select(.event_type=="alert") | .alert.signature' /var/log/suricata/eve.json | sort | uniq 
-atau: 
+atau:  
+ 
 > jq 'select(.event_type=="alert" and (.alert.signature | test("SCAN|Nmap"; "i")))' /var/log/suricata/eve.json 
 
 
